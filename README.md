@@ -25,7 +25,13 @@ A benchmark for Portuguese zero-shot stance detection
 
 - sentence-transformers==2.2.2
 
+# Creating the config files:
+
+Go to the folder [`config`](https://github.com/mcpavan/pt_zero_shot_stance_full/tree/main/config) and execute the .py file for the respective approach (`in-domain`, `cross-target`, `llm` or `distant`). This will generate a set of subfolders and files that correspond to the grid seach executed in the PhD Thesis.
+
 # Training a model:
+
+Go to the folder [`src/py_util`](https://github.com/mcpavan/pt_zero_shot_stance_full/tree/main/src/py_util) and run a command with the following template:
 
 General syntax:
 ```
@@ -34,10 +40,9 @@ python train_model.py -m train -c [config_file] -t [train_data] -v [valid_data] 
 
 Example:
 ```
-python train_model.py -m train -c ../../config/BiCondBertLstm_example.txt -t ../../data/UStanceBR/v2/hold1topic_out/final_bo_train.csv -v ../../data/UStanceBR/v2/hold1topic_out/final_bo_valid.csv -n bo -e 5 -s 1
+python train_model.py -m train -c ../../config/ustancebr/indomain/BiLSTM_example.txt -t ../../data/UStanceBR/v2/final_bo_train.csv -v ../../data/UStanceBR/v2/final_bo_valid.csv -n bo -e 5 -s 1
 ```
 
 Contact:
 
-[Matheus Camasmie Pavan](linkedin.com/in/matheus-camasmie-pavan)
-[matheus.pavan@usp.br](matheus.pavan@usp.br)
+[Matheus Camasmie Pavan](linkedin.com/in/matheus-camasmie-pavan) ([matheus.pavan@usp.br](matheus.pavan@usp.br))

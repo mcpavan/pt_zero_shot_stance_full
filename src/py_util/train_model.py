@@ -542,7 +542,7 @@ def main(args):
         prefix="hf_model_"
     )
 
-    if "BiLSTMAttn" in config["name"]:
+    if "BiLSTM" in config["name"]:
         text_input_layer = input_models.BertLayer(
             use_cuda=use_cuda,
             pretrained_model_name=config.get("bert_pretrained_model", "bert-base-uncased"),
@@ -596,7 +596,7 @@ def main(args):
             **kwargs
         )
     
-    elif "BiLSTMJointAttn" in config["name"]:
+    elif "BiLSTMJoint" in config["name"]:
         text_input_layer = input_models.BertLayer(
             use_cuda=use_cuda,
             pretrained_model_name=config.get("bert_pretrained_model", "bert-base-uncased"),
@@ -955,7 +955,7 @@ def main(args):
             **kwargs
         )
     
-    elif 'AAD' in config['name']:
+    elif 'BertAAD' in config['name']:
         if args["mode"] == "train":
             train_fn = train_AAD
             tgt_train_data = load_data(config, args, data_key="tgt_trn")

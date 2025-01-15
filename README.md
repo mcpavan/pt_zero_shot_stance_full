@@ -45,7 +45,7 @@ python train_model.py -m train -c ../../config/ustancebr/indomain/BiLSTM_example
 
 # References:
 
-This code is inspired by https://github.com/emilyallaway/zero-shot-stance and https://github.com/MalavikaSrikanth16/adversarial-learning-for-stance, from which the implementations in the present repository of the models BiCond, CrossNet, TOAD, JointCL were reused.
+This code is inspired by https://github.com/emilyallaway/zero-shot-stance and https://github.com/MalavikaSrikanth16/adversarial-learning-for-stance, from which the implementations in the present repository of the models BiCond, CrossNet, and TOAD were reused. The implementation of the model JointCL is reused from https://github.com/HITSZ-HLT/JointCL/tree/main.
 
 # Contact:
 

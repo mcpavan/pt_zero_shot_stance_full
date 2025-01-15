@@ -43,6 +43,10 @@ Example:
 python train_model.py -m train -c ../../config/ustancebr/indomain/BiLSTM_example.txt -t ../../data/UStanceBR/v2/final_bo_train.csv -v ../../data/UStanceBR/v2/final_bo_valid.csv -n bo -e 5 -s 1
 ```
 
-Contact:
+# References:
+
+This code is inspired by https://github.com/emilyallaway/zero-shot-stance and https://github.com/MalavikaSrikanth16/adversarial-learning-for-stance, from which the implementations in the present repository of the models BiCond, CrossNet, TOAD, JointCL were reused.
+
+# Contact:
 
 [Matheus Camasmie Pavan](linkedin.com/in/matheus-camasmie-pavan) ([matheus.pavan@usp.br](matheus.pavan@usp.br))
